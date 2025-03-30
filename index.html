@@ -73,6 +73,18 @@
 
     }
 
+    .section1 div > p, .section4 div > p{
+        padding-top:10px;
+    }
+
+    .section4{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr );
+        justify-items: center;  
+        gap: 4px;
+
+    }
+
     ul{
         list-style: none;
         font-size:24px;
@@ -102,6 +114,10 @@
         width: 500px;
     }
 
+    /* .section1, .section2{ */
+    section{
+        padding: 20px 0;
+    }
     .bold{
         font-weight: bold;
     }
@@ -122,9 +138,7 @@
         border: none;
     }
 
-    .section1, .section2{
-        padding: 20px 0;
-    }
+
 
 
 
@@ -202,16 +216,62 @@
             </ul>
         </section>
         <hr>
-        <section class="section3">
+        <section>
+            <h1>Best Seller</h1>
+            <div class="section1">
+            <div>
+                <img src="pictures/Peanut Butter Cookies.jpg" width="322px" height="322px"/>
+                <p class="bold">PEANUT BUTTER COOKIES</p>
+                <p class="price">$10</p>
+            </div>
+            <div>
+                <img src="pictures/OatmealCookies.jpg"  width="480px" height="322px"/>
+                <p class="bold">OATMEAL COOKIES</p>
+                <p class="price">$10</p>
+            </div>
+            <div>
+                <img src="pictures/tira.png"  width="347px" height="322px"/>
+                <p class="bold">TIRAMISU CREPE CAKE</p>
+                <p class="price">$10</p>
+            </div>
+        </div>
+        </section>
+        <section>
+            <h1>Pies</h1>
+            <div class="section4">
+            <div>
+                <img src="pictures/Apple-Pie-Recipe.jpg" width="224px" height="337px"/>
+                <p class="bold">APPLE PIE</p>
+                <p class="price">$10</p>
+            </div>
+            <div>
+                <img src="pictures/Lemon-Meringue-Pie-slice.jpg" width="224px" height="337px"/>
+                <p class="bold">LEMON MERINGUE PIE</p>
+                <p class="price">$15</p>
+            </div>
+            <div>
+                <img src="pictures/tira.png" width="224px" height="337px" />
+                <p class="bold">KEY LIME PIE</p>
+                <p class="price">$15</p>
+            </div>
+            <div>
+                <img src="pictures/Chocolate-Cream-Pie.jpg"  width="224px" height="337px"/>
+                <p class="bold">CHOCOLATE CREAM PIE</p>
+                <p class="price">$17</p>
+            </div>
+        </div>
+        </section>
+        <hr>
+
+    </main>
+    <footer  class="section3">
+        <div>
         <img class="left-box" src="pictures\header-img.png"/>
         <div class="right-box">     
             <p>We deliver anywhere!</p>
             <div><a>Click here for the order form</a></div>
         </div>
-        </section>
-    </main>
-    <footer>
-
+        </div>
     </footer>
 
 </body>
