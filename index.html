@@ -4,6 +4,10 @@
                 
                 
     <style>
+        *{
+            margin:0;
+            padding:0;
+        }
     body{
         font-family: 'Bogart', sans-serif;
 
@@ -20,7 +24,6 @@
     }
 
     .right-box {
-        /* padding-top: 20px; */
         width: 50%;
         height: 100vh;
 
@@ -28,7 +31,12 @@
         /* grid-column: 1fr; */
         /* grid-row: 4fr; */
         justify-items: center;
+        align-items: center;  /* Aligns grid items along the block (column) axis */
 
+    }
+
+    .right-box{
+        font-size: 45px; text-align: center;
     }
 
     .first-row {
@@ -46,6 +54,7 @@
         border: 1px solid white;
         padding: 10px;
         color: white;
+        font-size: 25px;
 
     }
 
@@ -57,9 +66,10 @@
     .section1{
         display: grid;
         /* grid-template-columns: 345px 283px 340px; */
-        grid-template-columns: repeat( auto-fit, minmax(340px, 1fr) );
+        grid-template-columns: repeat(3, 1fr );
         justify-items: center;
-        justify-content: space-around;   
+        /* justify-content: space-around;    */
+        gap: 10px;
 
     }
 
@@ -94,12 +104,12 @@
 
     .bold{
         font-weight: bold;
-
     }
 
-    section{
+    /* section{
         height: 100vh;
-    }
+        overflow: hidden;
+    } */
 
     .section3{
         background-color: #d69537;
@@ -112,6 +122,35 @@
         border: none;
     }
 
+    .section1, .section2{
+        padding: 20px 0;
+    }
+
+
+
+    @media (max-width: 768px) {
+            /* header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .first-row {
+                flex-direction: column;
+                align-items: center;
+            } */
+
+            .section1 {
+                grid-template-columns: 1fr; 
+            }
+
+            .section2 {
+                grid-template-columns: 1fr; 
+            }
+
+            h1, p , ul {
+                transform: scale(0.8) 
+            }
+        }
     </style>
 </head>
 
@@ -125,8 +164,8 @@
                 <img src="pictures\logo.png" width="70px" height="71px"/>
             </div>
                 
-            <p style="font-size: 50px; text-align: center">Bake Sale</p>
-            <p style="text-align: center">Satisfy cravings for a cause
+            <p>Bake Sale</p>
+            <p>Satisfy cravings for a cause
                 <br/>from 1-4 january 2025</p>
             <div><a>Shop Online</a></div>
         </div>
@@ -166,7 +205,7 @@
         <section class="section3">
         <img class="left-box" src="pictures\header-img.png"/>
         <div class="right-box">     
-            <p style="font-size: 50px; text-align: center">We deliver anywhere!</p>
+            <p>We deliver anywhere!</p>
             <div><a>Click here for the order form</a></div>
         </div>
         </section>
