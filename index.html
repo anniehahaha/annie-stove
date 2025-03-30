@@ -1,0 +1,178 @@
+<head>
+    <link href="https://fonts.cdnfonts.com/css/bogart" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cheri" rel="stylesheet">
+                
+                
+    <style>
+    body{
+        font-family: 'Bogart', sans-serif;
+
+    }
+
+    header{
+        background-color: #d69537;
+    }
+
+    .left-box {
+        width: 50%;
+        height: 100vh; 
+        float: left;
+    }
+
+    .right-box {
+        /* padding-top: 20px; */
+        width: 50%;
+        height: 100vh;
+
+        display: grid;
+        /* grid-column: 1fr; */
+        /* grid-row: 4fr; */
+        justify-items: center;
+
+    }
+
+    .first-row {
+        font-size: 16px;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px; 
+        justify-content: stretch; 
+        place-items: center;
+
+    }
+
+    a{
+        border: 1px solid white;
+        padding: 10px;
+        color: white;
+
+    }
+
+    main{
+        background-color: #f6e6d3;
+        padding-top: 20px;
+    }
+
+    .section1{
+        display: grid;
+        /* grid-template-columns: 345px 283px 340px; */
+        grid-template-columns: repeat( auto-fit, minmax(340px, 1fr) );
+        justify-items: center;
+        justify-content: space-around;   
+
+    }
+
+    ul{
+        list-style: none;
+        font-size:24px;
+    }
+
+    .section2 li:not(:last-child) {
+    margin-bottom: 110px;
+    }
+
+    .section2{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns: one flexible (1fr) for the h1, and auto for the ul */
+        /* align-items: start;              */ /* Align both items to the top */
+        justify-items: center;
+        gap:auto;
+        align-content: center;    
+    }
+
+    h1{
+        font-family: 'Cheri', sans-serif;
+        font-family: 'Cheri Liney', sans-serif;
+        font-size: 48px;    
+        text-align: center;
+    }
+
+    .section2 h1{
+        width: 500px;
+    }
+
+    .bold{
+        font-weight: bold;
+
+    }
+
+    section{
+        height: 100vh;
+    }
+
+    .section3{
+        background-color: #d69537;
+
+    }
+
+    hr{
+        background-color: orange;
+        height: 2px;
+        border: none;
+    }
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <img class="left-box" src="pictures\header-img.png"/>
+        <div class="right-box">
+            <div class="first-row">
+                <p style="color: white">Annie’s oven</p>
+                <img src="pictures\logo.png" width="70px" height="71px"/>
+            </div>
+                
+            <p style="font-size: 50px; text-align: center">Bake Sale</p>
+            <p style="text-align: center">Satisfy cravings for a cause
+                <br/>from 1-4 january 2025</p>
+            <div><a>Shop Online</a></div>
+        </div>
+
+    </header>
+    <main>
+        <section>
+        <h1>Take a bite!</h1>
+        <div class="section1"> 
+            <div>
+                <img src="pictures\yummy cookies.png"/>
+                <p class="bold">Yummy Cookies</p>
+                <p>Chocolate chip, oatmeal raisin & peanut butter flavours</p>
+            </div>
+            <div>
+                <img src="pictures\cake2.png"/>
+                <p  class="bold">Mouthwatering Cakes</p>
+                <p>Chocolate, red velvet, carrot & lemon cakes</p>
+            </div>
+            <div>
+                <img style="background-color: blue;" src="pictures\cake3.png"/>
+                <p  class="bold">Delicious Pies</p>
+                <p>Blueberry, apple, peach & banana creme pies</p>
+            </div>
+        </div>
+        </section>
+        <hr>
+        <section class="section2">
+            <h1>All proceeds of this bake sale go to</h1>
+            <ul  class="bold">
+                <li>Five Rivers Children's Foundation</li>
+                <li>Marine Conservational Society</li>
+                <li>The Bombay Family</li>
+            </ul>
+        </section>
+        <hr>
+        <section class="section3">
+        <img class="left-box" src="pictures\header-img.png"/>
+        <div class="right-box">     
+            <p style="font-size: 50px; text-align: center">We deliver anywhere!</p>
+            <div><a>Click here for the order form</a></div>
+        </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
